@@ -1,18 +1,18 @@
-// firebaseConfig.ts
 import { initializeApp } from "firebase/app";
 import { getAnalytics, Analytics } from "firebase/analytics";
 import { getFirestore, Firestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 import { getAuth } from "firebase/auth";
-// Firebase configuration object
+
+// Firebase configuration using environment variables
 const firebaseConfig = {
-  apiKey: "AIzaSyCRpbjlOOFq-zNosIenM85tAvDVuF-f3T4",
-  authDomain: "prouto-bc339.firebaseapp.com",
-  projectId: "prouto-bc339",
-  storageBucket: "prouto-bc339.firebasestorage.app",
-  messagingSenderId: "9871468978",
-  appId: "1:9871468978:web:21a576cfb491b60eb65cab",
-  measurementId: "G-V62C759097"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -25,9 +25,9 @@ if (typeof window !== "undefined") {
   analytics = getAnalytics(app);
 }
 
-// Initialize Firestore and Storage
+// Initialize Firestore, Storage, and Auth
 const db: Firestore = getFirestore(app);
 const storage = getStorage(app);
 const auth = getAuth(app);
 
-export { app, analytics, db, storage,auth };
+export { app, analytics, db, storage, auth };

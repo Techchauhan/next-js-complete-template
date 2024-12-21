@@ -72,16 +72,16 @@ function DashboardLayoutWithAccountInfo(props) {
       window={window} // Using window prop directly
       session={demoSession}
       branding={{
-        title: 'Prouto',
-        logo: (
-          <Image
-            src="/prouto-logo.png"
-            alt="Prouto Logo"
-            width={40}
-            height={40}
-            priority
-          />
-        ),
+        title: 'Your Applicaiton Name',
+        // logo: (
+        //   <Image
+        //     src="/prouto-logo.png"
+        //     alt="Prouto Logo"
+        //     width={40}
+        //     height={40}
+        //     priority
+        //   />
+        // ),
       }}
     >
  

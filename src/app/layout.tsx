@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Prout Admin",
-  description: "Prouto Administration Panel",
+  title: "Application",
+  description: "Your Application Discription",
 };
 
 export default function RootLayout({

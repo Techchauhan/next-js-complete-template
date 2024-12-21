@@ -1,6 +1,24 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
 ## Getting Started
+
+### Create the .env.local file in the root of the dir.
+
+```NEXT_PUBLIC_FIREBASE_API_KEY=Enter your Public Firebase API Key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=Enter your auth domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=Enter your Project Id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=Enter your Storage Bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=Enter your messaging Sender ID
+NEXT_PUBLIC_FIREBASE_APP_ID=Enter your Firebase app id
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=Enter your Measurment Id;
+```
 
 First, run the development server:
 
